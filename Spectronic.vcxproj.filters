@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a1c04812-8b81-4353-a881-9c2b5f7b36ae}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Main Dialogs .cpp">
+      <UniqueIdentifier>{0b44c40f-b65b-4fe0-abcb-6a2bb08cb2a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\New Controls .cpp">
+      <UniqueIdentifier>{20d67fee-c9aa-4fe3-a090-a1aac2be1028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config Dialogs .cpp">
+      <UniqueIdentifier>{54c497ad-7e7b-4e64-ad81-c54500c24ad6}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{61eb2875-9735-4665-807a-904a71347dba}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Main Dialogs .h">
+      <UniqueIdentifier>{7c3866cf-b683-41d8-820d-db63315b2552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\New Controls .h">
+      <UniqueIdentifier>{7a0b3535-3729-4391-9a30-2836cf27d5e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Config Dialogs .h">
+      <UniqueIdentifier>{7f503679-040c-4007-a333-3489c04b87e2}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{035a5e30-a246-4402-ab46-5d4e31fa957e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainBlank.cpp">
+      <Filter>Source Files\Main Dialogs .cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="MainCommand.cpp">
+      <Filter>Source Files\Main Dialogs .cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDefaultDlg.cpp">
+      <Filter>Source Files\Main Dialogs .cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGraph.cpp">
+      <Filter>Source Files\Main Dialogs .cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="MainInfo.cpp">
+      <Filter>Source Files\Main Dialogs .cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScan.cpp">
+      <Filter>Source Files\Main Dialogs .cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="ListData.cpp">
+      <Filter>Source Files\New Controls .cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="ListLog.cpp">
+      <Filter>Source Files\New Controls .cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigComPort.cpp">
+      <Filter>Source Files\Config Dialogs .cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSerialPort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FullGraphDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spectro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spectronic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpectronicDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SubDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Spectronic.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainBlank.h">
+      <Filter>Header Files\Main Dialogs .h</Filter>
+    </ClInclude>
+    <ClInclude Include="MainCommand.h">
+      <Filter>Header Files\Main Dialogs .h</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDefaultDlg.h">
+      <Filter>Header Files\Main Dialogs .h</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGraph.h">
+      <Filter>Header Files\Main Dialogs .h</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInfo.h">
+      <Filter>Header Files\Main Dialogs .h</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScan.h">
+      <Filter>Header Files\Main Dialogs .h</Filter>
+    </ClInclude>
+    <ClInclude Include="ListData.h">
+      <Filter>Header Files\New Controls .h</Filter>
+    </ClInclude>
+    <ClInclude Include="ListLog.h">
+      <Filter>Header Files\New Controls .h</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigComPort.h">
+      <Filter>Header Files\Config Dialogs .h</Filter>
+    </ClInclude>
+    <ClInclude Include="CError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Conf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FullGraphDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialPort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spectro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spectronic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpectronicDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SubDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\default.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Green.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\GreenI.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\red.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Red.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Spectronic.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ToolBar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Yellow.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Spectronic.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

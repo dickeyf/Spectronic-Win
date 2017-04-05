@@ -1,0 +1,563 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 267, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Spectronic"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Spectronic Version 1.0",IDC_STATIC,96,7,74,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,104,43,59,8
+    DEFPUSHBUTTON   "OK",IDOK,210,21,50,14,WS_GROUP,WS_EX_STATICEDGE
+    LTEXT           "Etienne Tremblay",IDC_STATIC,70,23,62,8
+    LTEXT           "Auteurs:",IDC_STATIC,39,23,28,8
+    LTEXT           "Francois Dickey",IDC_STATIC,69,31,63,8
+END
+
+IDD_MAIN_DEFAULT DIALOGEX 0, 0, 377, 81
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LISTLOG,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,1,1,376,80,WS_EX_DLGMODALFRAME
+END
+
+IDD_MAIN_BLANK DIALOGEX 0, 0, 377, 81
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Fichier de données:",IDC_STATIC,1,2,65,8
+    EDITTEXT        IDC_PATH,67,0,163,12,ES_AUTOHSCROLL
+    LTEXT           "Nom:",IDC_STATIC,47,15,20,9
+    EDITTEXT        IDC_NOM,67,14,163,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Ajouter",IDC_AJOUTER,231,14,76,12,WS_DISABLED,WS_EX_STATICEDGE
+    PUSHBUTTON      "Parcourir ...",IDC_BROWSE,231,0,76,12,0,WS_EX_STATICEDGE
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_DISABLED | WS_BORDER | WS_TABSTOP,1,27,305,54,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "Effacer",IDC_DELETE,307,27,70,27,WS_DISABLED,WS_EX_STATICEDGE
+    CONTROL         "Utiliser",IDC_SEL,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_DISABLED | WS_TABSTOP,307,54,70,26,WS_EX_STATICEDGE
+END
+
+IDD_CONFIG_COMPORT DIALOG 0, 0, 190, 139
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Baud Rate:",IDC_STATIC,0,52,40,8
+    LTEXT           "Numéro du COM Port:",IDC_STATIC,0,32,70,8
+    LTEXT           "Byte Size:",IDC_STATIC,0,72,35,8
+    LTEXT           "Partity:",IDC_STATIC,0,92,25,8
+    LTEXT           "Stop bits:",IDC_STATIC,0,112,30,8
+    EDITTEXT        IDC_NB,116,32,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BYTESIZE,116,72,74,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PARITY,116,90,74,56,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_STOPBITS,116,110,74,56,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BAUDRATE,116,51,74,70,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MAIN_SCAN DIALOGEX 0, 0, 376, 80
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Incrémentation (nm) :",IDC_STATIC,10,11,66,10
+    LTEXT           "Vitesse (nm/min) :",IDC_STATIC,10,26,60,8
+    LTEXT           "Début du spectre (nm) :",IDC_STATIC,10,41,74,8
+    LTEXT           "Fin du spectre (nm) :",IDC_STATIC,10,56,65,8
+    EDITTEXT        IDC_INC,105,11,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPEED,105,26,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STRTWV,105,41,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STOPWV,105,56,80,12,ES_AUTOHSCROLL
+    GROUPBOX        "Configuration du spectre UV",IDC_STATIC,0,0,190,75
+    GROUPBOX        "Renseignement estimé",IDC_STATIC,191,0,118,75
+    LTEXT           "Temps du scan:",IDC_STATIC,195,35,55,8
+    LTEXT           "",IDC_TIME,255,35,49,8
+    PUSHBUTTON      "Sauvegarder",IDC_SAVE,311,54,63,20,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Default",IDC_DEFAULT,311,33,63,20,0,WS_EX_STATICEDGE
+END
+
+IDD_MAIN_INFO DIALOGEX 0, 0, 377, 81
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TITLE,143,8,164,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SUBST,143,21,164,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_STUDENT,143,34,164,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_GROUP,143,47,60,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DATE,143,60,60,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Titre du graphique:",IDC_STATIC,62,9,61,8
+    LTEXT           "Nom de la substance:",IDC_STATIC,62,22,71,8
+    LTEXT           "Nom de(s) l'étudiant(s):",IDC_STATIC,62,35,71,8
+    LTEXT           "Groupe:",IDC_STATIC,62,48,61,8
+    LTEXT           "Date:",IDC_STATIC,62,61,71,8
+END
+
+IDD_FULLGRAPHDLG DIALOG 0, 0, 429, 265
+STYLE DS_SETFONT | DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Graphique Plein Écran"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_MAXDLG DIALOGEX 0, 0, 153, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Point(s) significatifs de la courbe"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Coordonnées :",IDC_STATIC,0,3,46,8
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_TABSTOP,1,53,152,50,WS_EX_STATICEDGE
+    EDITTEXT        IDC_XY,48,2,105,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Début:",IDC_STATIC,0,21,22,10
+    EDITTEXT        IDC_BEGIN,26,20,52,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Fin:",IDC_STATIC,83,21,13,10
+    EDITTEXT        IDC_END,98,20,55,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Maximum:",IDC_STATIC,0,39,32,10
+    EDITTEXT        IDC_MAXIMUM,48,38,105,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_MAIN_GRAPH DIALOGEX 0, 0, 377, 80
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Maximum :",IDC_STATIC,11,54,35,8
+    LTEXT           "Minimum :",IDC_STATIC,11,39,35,8
+    EDITTEXT        IDC_XMIN,85,40,42,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_XMAX,85,55,42,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Minimum :",IDC_STATIC,139,41,35,8
+    EDITTEXT        IDC_YMIN,216,40,42,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Graduation des X",IDC_STATIC,8,0,123,79
+    LTEXT           "Intervale (en nm)",IDC_STATIC,11,9,57,8
+    EDITTEXT        IDC_XUP,85,25,42,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Automatique",IDC_XAUTOMATIC,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,14,67,53,8
+    LTEXT           "Lignes par graduation",IDC_STATIC,11,25,69,8
+    EDITTEXT        IDC_XUS,85,10,42,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Graduation des Y",IDC_STATIC,135,0,126,80
+    LTEXT           "Maximum :",IDC_STATIC,139,56,35,8
+    EDITTEXT        IDC_YMAX,216,55,42,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Intervale (en nm)",IDC_STATIC,140,10,57,8
+    EDITTEXT        IDC_YUP,216,25,42,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Lignes par graduation",IDC_STATIC,140,25,69,8
+    EDITTEXT        IDC_YUS,216,10,42,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Automatique",IDC_YAUTOMATIC,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,143,69,53,8
+    GROUPBOX        "Couleur",IDC_STATIC,266,0,85,79
+    LTEXT           "Courbe :",IDC_STATIC,271,36,30,8
+    CONTROL         "",IDC_DROITE,"Static",SS_BLACKFRAME,330,35,12,10
+    LTEXT           "Arrière-plan :",IDC_STATIC,271,20,40,8
+    CONTROL         "",IDC_BACK,"Static",SS_BLACKFRAME,330,20,12,10
+    LTEXT           "Graduations :",IDC_STATIC,271,50,45,8
+    CONTROL         "",IDC_GRADS,"Static",SS_BLACKFRAME,330,50,12,10
+    CONTROL         "Couleurs par défault",IDC_DEFAULTCOLORS,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,271,68,75,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Spectronic 1001,1201 Interface"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Spectronic"
+            VALUE "LegalCopyright", "Copyright (C) 2001"
+            VALUE "OriginalFilename", "Spectronic.EXE"
+            VALUE "ProductName", "Spectronic 1201"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_MAIN_DEFAULT, DIALOG
+    BEGIN
+    END
+
+    IDD_CONFIG_COMPORT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 188
+    END
+
+    IDD_MAIN_GRAPH, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CONFIG_COMPORT DLGINIT
+BEGIN
+    IDC_PARITY, 0x403, 5, 0
+0x7645, 0x6e65, "\000" 
+    IDC_PARITY, 0x403, 5, 0
+0x614d, 0x6b72, "\000" 
+    IDC_PARITY, 0x403, 10, 0
+0x6f4e, 0x5020, 0x7261, 0x7469, 0x0079, 
+    IDC_PARITY, 0x403, 4, 0
+0x644f, 0x0064, 
+    IDC_PARITY, 0x403, 6, 0
+0x7053, 0x6361, 0x0065, 
+    IDC_STOPBITS, 0x403, 2, 0
+0x0031, 
+    IDC_STOPBITS, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_STOPBITS, 0x403, 2, 0
+0x0032, 
+    IDC_BAUDRATE, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_BAUDRATE, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_BAUDRATE, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_BAUDRATE, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_BAUDRATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BAUDRATE, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About Spectronic..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPECTRONIC_DIALOG DIALOGEX 0, 0, 847, 442
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "SpectroGUI 2001"
+MENU IDR_MENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Annuler",IDC_CANCELER,57,7,64,14,WS_DISABLED,WS_EX_STATICEDGE
+    PUSHBUTTON      "Initialiser le Com Port",IDC_INITIALYSE,191,7,70,15,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Scan UV",IDC_UVSCAN,331,7,70,15,WS_DISABLED,WS_EX_STATICEDGE
+    LTEXT           "Graphique:",IDC_STATIC,2,17,50,8
+    CONTROL         "Tree1",IDC_MENU,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_NOTOOLTIPS | WS_HSCROLL | WS_TABSTOP,2,343,243,92,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    GROUPBOX        "Spectronic 1001 Plus",IDC_WORKSPACE,245,339,597,96
+    LTEXT           "Valeur:",IDC_STATIC,687,17,40,8
+    CONTROL         "List1",IDC_VALUE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,688,25,154,314,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         "",IDC_GRAPH,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,2,26,682,314
+END
+
+IDD_MAIN_COMMANDS DIALOGEX 0, 0, 376, 80
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Envoyer la liste",IDC_SENDCOMMAND,315,65,60,15,WS_DISABLED,WS_EX_STATICEDGE
+    EDITTEXT        IDC_COMMAND,60,9,67,12,ES_UPPERCASE | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Commande:",IDC_STATIC,60,0,38,8
+    PUSHBUTTON      "Ajouter ...",IDC_ADD,130,9,65,13,WS_DISABLED,WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOSORTHEADER | WS_DISABLED | WS_BORDER | WS_TABSTOP,61,24,253,56,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "Tout effacer",IDC_DELETE,315,50,60,15,WS_DISABLED,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SPECTRONIC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 842
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 435
+    END
+
+    IDD_MAIN_COMMANDS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 375
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SPECTRONIC_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // French (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENC)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIGURATION_DIALOG DIALOGEX 0, 0, 338, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration du Spectronic 1001 Plus"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Accepter",IDOK,120,181,67,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Annuler",IDCANCEL,265,181,66,14,0,WS_EX_STATICEDGE
+    GROUPBOX        "Port de communication",IDC_WORKSPACE,121,7,210,173
+    CONTROL         "Tree1",IDC_TREE_OPTIONS,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_NOTOOLTIPS | TVS_NOSCROLL | TVS_FULLROWSELECT | TVS_INFOTIP | WS_BORDER | WS_TABSTOP,7,7,111,188
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CONFIGURATION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Spectronic.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Spectronic.ico"
+
+IDI_ICON                ICON                    "res\\icon.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        POPUP "Nouveau Projet "
+        BEGIN
+            MENUITEM "Spectre UV",                  ID_FICHIER_NOUVEAUPROJET_SPECTREUV
+            MENUITEM "Spectre Visible",             ID_FICHIER_NOUVEAUPROJET_SPECTREVISIBLE
+        END
+        POPUP "Ouvrir"
+        BEGIN
+            MENUITEM "Données ...",                 ID_FICHIER_OPENDATA_BIN
+            MENUITEM "Données Texte ...",           ID_FICHIER_OPEN_TXT
+            MENUITEM "Étalon ...",                  ID_FICHIER_OPENETALON
+        END
+        POPUP "Enregistrer"
+        BEGIN
+            MENUITEM "Données ...",                 ID_FICHIER_SAVEDATA_BIN
+            MENUITEM "Données Texte ...",           ID_FICHIER_SAVE_TXT
+            MENUITEM "Étalon ...",                  ID_FICHIER_SAVEETALON
+        END
+        MENUITEM "Imprimer ...",                ID_FICHIER_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Quitter",                     ID_FICHIER_QUITTER
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "Options ...",                 ID_EDITION_OPTIONS
+    END
+    POPUP "&Aide"
+    BEGIN
+        MENUITEM "À Propos ...",                ID_AIDE_PROPOS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_TOOL_NEW
+    BUTTON      ID_TOOL_OPEN
+    BUTTON      ID_TOOL_SAVE
+    BUTTON      ID_TOOL_PRINT
+    BUTTON      ID_TOOL_PRINTPREVIEW
+    BUTTON      ID_TOOL_CUT
+    BUTTON      ID_TOOL_COPY
+    BUTTON      ID_TOOL_PASTE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP                  "res\\ToolBar.bmp"
+
+#endif    // English (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Spectronic.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
