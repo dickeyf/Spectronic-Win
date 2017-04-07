@@ -1,12 +1,13 @@
 # Overview
+
+[![Build status](https://ci.appveyor.com/api/projects/status/ir8mqdhoyq25vubq?svg=true)](https://ci.appveyor.com/project/dickeyf/spectronic-win)
+
 This project was created by Francois Dickey and Etienne Tremblay in 2001.
 
 It was a CEGEP chemistry cornerstone project which consisted of writing a software
 to be used by the CEGEP to operate a Spectronic 1001 in Windows 95 (As the official software was for DOS only).
 
 The software was thus created with the aim of running in Windows 95, and to capture UV and Visible spectrometers via the Spectronic 1001's com port.
-
-[![Build status](https://ci.appveyor.com/api/projects/status/ir8mqdhoyq25vubq?svg=true)](https://ci.appveyor.com/project/dickeyf/spectronic-win)
 
 # Today's purpose
 
