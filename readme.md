@@ -6,6 +6,8 @@ to be used by the CEGEP to operate a Spectronic 1001 in Windows 95 (As the offic
 
 The software was thus created with the aim of running in Windows 95, and to capture UV and Visible spectrometers via the Spectronic 1001's com port.
 
+[![Build status](https://ci.appveyor.com/api/projects/status/ir8mqdhoyq25vubq?svg=true)](https://ci.appveyor.com/project/dickeyf/spectronic-win)
+
 # Today's purpose
 
 I recently a Spectronic 1001 on EBay for the purpose of quantifying diacetyl levels in homebrew beer, as it is a great indicator of the quality of the
